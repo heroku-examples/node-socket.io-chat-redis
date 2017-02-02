@@ -1,0 +1,5 @@
+{
+  "name": "Socket.io-Chat for Heroku",
+  "description": "An example of Socket.io across multiple nodes backed by Redis",
+  "keywords": ["node", "express", "socket.io", "websockets", "chat", "example"]
+}

@@ -1,25 +1,32 @@
-# Installing
+# Socket.io Chat Example
+
+Socket.io across multiple nodes, backed by redis, on Heroku.
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+# Deploying to Heroku via CLI
 
 ```
-$ yarn   # or npm install
+$ heroku create
+$ heroku addons:create heroku-redis
+$ git push heroku master
+$ heroku open
 ```
 
 # Developing locally
 
 ```
+$ yarn
 $ heroku local -f Procfile.dev
 ```
 
-# Deploying
+You'll need a redis server.
+You can set up your own on localhost, or use a free Heroku-hosted server:
 
 ```
 $ heroku create
-$ git push heroku master
-$ heroku open
+$ heroku addons:create heroku-redis
+$ heroku config -s > .env
 ```
 
-# Linting
-
-```
-$ yarn run lint   # or npm run lint
-```
+(the last line copies the REDIS_URL value to your local .env config file)
