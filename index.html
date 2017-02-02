@@ -14,12 +14,12 @@
     </style>
   </head>
   <body>
-    <ul id="messages"></ul>
-    <form action="">
-      <input id="m" autocomplete="off" /><button>Send</button>
+    <ul id='messages'></ul>
+    <form action=''>
+      <input id='m' autocomplete='off' /><button>Send</button>
     </form>
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.js"></script>
+    <script src='/socket.io/socket.io.js'></script>
+    <script src='//code.jquery.com/jquery-3.1.1.slim.min.js'></script>
     <script>
       var socket = io();
       $('form').submit(function(){
