@@ -20,6 +20,7 @@ On Heroku, you can enable that with:
 
 ```
 $ heroku features:enable http-session-affinity
+$ herouk scale web=4:standard-1x
 ```
 
 ## Developing locally
@@ -30,7 +31,7 @@ $ heroku local -f Procfile.dev
 ```
 
 You'll need a redis server.
-You can set up your own on localhost, or use a free Heroku-hosted server:
+Set one up on localhost, or just use a free Heroku-hosted server:
 
 ```
 $ heroku create
